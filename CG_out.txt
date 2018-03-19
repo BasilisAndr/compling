@@ -1,0 +1,56 @@
+"<Прошло>" 
+	"проходить" VERB Aspect=Perf Gender=Neut Mood=Ind Number=Sing Tense=Past VerbForm=Fin Voice=Act 
+"<больше>" 
+	"больше" ADV Degree=Cmp SELECT:38 
+"<десяти>"
+ 	"десять" NUM Case=Gen SELECT:60
+ "<лет>" 
+	"год" NOUN Animacy=Inan Case=Gen Gender=Masc Number=Plur 
+"<,>" 
+	"," PUNCT 
+"<и>" 
+	"и" CCONJ
+ "<все>" 
+	"все" PRON Animacy=Anim Case=Nom Number=Plur SELECT:35
+ "<успокоились>"
+ 	"успокоиться" VERB Number=Plur 
+"<,>" 
+	"," PUNCT 
+"<признав>" 
+	"*признав" 
+"<за>"
+ 	"за" ADP
+ "<писателем>" 
+	"*писателем" 
+"<право>" 
+	"право" NOUN Animacy=Inan Case=Acc Gender=Neut Number=Sing 
+  "право" NOUN Animacy=Inan Case=Nom Gender=Neut Number=Sing "
+<на>"
+ 	"на" ADP 
+"<чувство>" 
+	"чувство" NOUN Animacy=Inan Case=Acc Gender=Neut Number=Sing 
+"<собственного>" 
+	"собственный" ADJ Case=Gen Degree=Pos Gender=Neut Number=Sing SELECT:48 
+"<достоинства>" 
+	"достоинство" NOUN Animacy=Inan Case=Gen Gender=Neut Number=Sing SELECT:44 
+"<и>" 
+	"и" CCONJ 
+"<что>" 
+	"что" SCONJ 
+  "что" PRON Case=Nom 
+  "что" PRON Case=Acc 
+  "что" PRON Animacy=Inan Case=Nom Gender=Neut Number=Sing 
+"<писать>" 
+	"писать" VERB Aspect=Imp VerbForm=Inf Voice=Act 
+"<можно>" 
+	"можно" ADV Degree=Pos 
+"<из>" 
+	"из" ADP 
+"<чистой>" 
+	"чистый" ADJ Case=Gen Degree=Pos Gender=Fem Number=Sing SELECT:56
+ "<любви>" 
+	"любовь" NOUN Animacy=Inan Case=Gen Gender=Fem Number=Sing SELECT:61
+ "<к>" 
+	"к" ADP 
+"<процессу>"
+ 	"процесс" NOUN Animacy=Inan Case=Dat Gender=Masc Number=Sing  
