@@ -1,0 +1,61 @@
+# This is an example Constraint Grammar rules file.
+
+# There is no built-in manual yet. Resources:
+# http://visl.sdu.dk/cg3.html
+# http://groups.google.com/group/constraint-grammar
+# http://kevindonnelly.org.uk/2010/05/constraint-grammar-tutorial/
+# http://kevindonnelly.org.uk/resources/tutorial.pdf
+
+# Firstly, we need to define what tags should be considered sentence delimiters. For this example, only full stop is set as delimiter.
+DELIMITERS = "<.>" ;
+
+# We can define sets for common tag clusters
+# LIST CASE = (N S) (N P) ; # A set that matches either a Noun Singular or a Noun Plural
+LIST DET = DET ;
+LIST PUNCT = PUNCT ;
+LIST PART = PART ;
+LIST ADV = ADV ;
+LIST PRON = PRON ;
+LIST V = VERB ;
+LIST CASE = (Case=Nom) (Case=Acc) (Case=Dat) (Case=Gen) ;
+LIST GENDER = (Gender=Masc) (Gender=Neut) ;
+LIST NOMINALS = (ADJ NOUN) ;
+LIST NUMBER = (Number=Sing) (Number=Plur) ;
+
+SECTION
+# If there is a singular noun to the right, I cannot be a verb or noun.
+# REMOVE (N) OR (V) IF (1 (N S)) ;
+
+# remove determiner before punctuation
+REMOVE DET IF (1C PUNCT) ;
+REMOVE PART IF (1C ADV) ;
+REMOVE DET IF (1C (VERB)) ;
+
+# select right все
+SELECT (PRON Animacy=Anim) IF (1C (VERB Number=Plur)) ;
+
+# select right больше
+SELECT (ADV "больше") IF (1C (NUM)) ;
+
+# delete nominative after prepositions
+REMOVE (NOUN Case=Nom) IF (-1 (ADP)) ;
+
+# coordinate number of adj-noun sequence
+SELECT $$NUMBER IF (-1C $$NUMBER) ;
+SELECT $$NUMBER IF (1C $$NUMBER) ;
+
+# coordinate gender of adj-noun sequence
+SELECT $$GENDER IF (-1C $$GENDER) ;
+SELECT $$GENDER IF (1C $$GENDER) ;
+
+# disambiguate и
+REMOVE (PART "и") IF (not -1 (KS)) ;
+REMOVE (CCONJ "и") IF (-1 (KS)) ;
+
+# right case after preposition
+SELECT (Case=Gen) IF (-1 ("из")) ;
+
+
+# If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
+SELECT $$CASE IF (1C $$CASE) ;
+SELECT $$CASE IF (-1C $$CASE) ;
