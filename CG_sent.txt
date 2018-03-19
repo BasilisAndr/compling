@@ -1,0 +1,74 @@
+"<Прошло>"
+	"проходить" VERB Aspect=Perf Gender=Neut Mood=Ind Number=Sing Tense=Past VerbForm=Fin Voice=Act
+"<больше>"
+	"много" NUM 
+	"больше" ADV Degree=Cmp
+	"большой" ADJ Degree=Cmp
+"<десяти>"
+	"десять" NUM Case=Gen
+	"десять" NUM Case=Loc
+"<лет>"
+	"год" NOUN Animacy=Inan Case=Gen Gender=Masc Number=Plur
+"<,>"
+	"," PUNCT 
+"<и>"
+	"и" CCONJ 
+	"и" PART 
+"<все>"
+	"весь" DET Case=Nom Number=Plur
+	"весь" DET Case=Acc Number=Plur
+	"весь" DET Case=Nom Gender=Neut Number=Sing
+	"весь" DET Case=Acc Gender=Neut Number=Sing
+	"все" PART 
+	"все" PRON Animacy=Anim Case=Nom Number=Plur
+	"все" PRON Animacy=Inan Case=Nom Gender=Neut Number=Sing
+	"все" PRON Animacy=Inan Case=Acc Gender=Neut Number=Sing
+"<успокоились>"
+	"успокоиться" VERB Number=Plur
+"<,>"
+	"," PUNCT 
+"<признав>"
+	"*признав"
+"<за>"
+	"за" ADP 
+"<писателем>"
+	"*писателем"
+"<право>"
+	"право" NOUN Animacy=Inan Case=Acc Gender=Neut Number=Sing
+	"право" NOUN Animacy=Inan Case=Nom Gender=Neut Number=Sing
+"<на>"
+	"на" ADP 
+"<чувство>"
+	"чувство" NOUN Animacy=Inan Case=Acc Gender=Neut Number=Sing
+	"чувство" NOUN Animacy=Inan Case=Nom Gender=Neut Number=Sing
+"<собственного>"
+	"собственный" ADJ Case=Gen Degree=Pos Gender=Masc Number=Sing
+	"собственный" ADJ Case=Gen Degree=Pos Gender=Neut Number=Sing
+"<достоинства>"
+	"достоинство" NOUN Animacy=Inan Case=Gen Gender=Neut Number=Sing
+	"достоинство" NOUN Animacy=Inan Case=Nom Gender=Neut Number=Plur
+"<и>"
+	"и" CCONJ 
+	"и" PART 
+"<что>"
+	"что" SCONJ 
+	"что" PRON Case=Nom
+	"что" PRON Case=Acc
+	"что" PRON Animacy=Inan Case=Nom Gender=Neut Number=Sing
+"<писать>"
+	"писать" VERB Aspect=Imp VerbForm=Inf Voice=Act
+"<можно>"
+	"можно" ADV Degree=Pos
+"<из>"
+	"из" ADP 
+"<чистой>"
+	"чистый" ADJ Case=Gen Degree=Pos Gender=Fem Number=Sing
+	"чистый" ADJ Case=Ins Degree=Pos Gender=Fem Number=Sing
+	"чистый" ADJ Case=Loc Degree=Pos Gender=Fem Number=Sing
+"<любви>"
+	"любовь" NOUN Animacy=Inan Case=Gen Gender=Fem Number=Sing
+	"любовь" NOUN Animacy=Inan Case=Loc Gender=Fem Number=Sing
+"<к>"
+	"к" ADP 
+"<процессу>"
+	"процесс" NOUN Animacy=Inan Case=Dat Gender=Masc Number=Sing
